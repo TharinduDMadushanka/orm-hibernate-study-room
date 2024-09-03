@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         Alien a1 = new Alien();
-        a1.setId(2);
+        a1.setId(3);
         a1.setName("Madu");
         a1.setColor("Blue");
 

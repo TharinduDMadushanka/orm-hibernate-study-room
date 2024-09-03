@@ -2,9 +2,7 @@ package lk.tdm;
 
 //Alien Pojo / Bean
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "alien")
@@ -12,7 +10,13 @@ public class Alien {
 
     @Id
     private int id;
+
+//    this not will be store in db
+@Transient
     private String name;
+
+//change the column name
+    @Column(name = "alien-color")
     private String color;
 
     public int getId() {
